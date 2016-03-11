@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		330F7B741C91D3EB00A77127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 330F7B731C91D3EB00A77127 /* main.m */; };
 		330F7B771C91D3EB00A77127 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 330F7B761C91D3EB00A77127 /* AppDelegate.m */; };
-		330F7B7A1C91D3EB00A77127 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330F7B791C91D3EB00A77127 /* ViewController.m */; };
-		330F7B7D1C91D3EB00A77127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330F7B7B1C91D3EB00A77127 /* Main.storyboard */; };
 		330F7B7F1C91D3EB00A77127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330F7B7E1C91D3EB00A77127 /* Assets.xcassets */; };
 		330F7B821C91D3EB00A77127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330F7B801C91D3EB00A77127 /* LaunchScreen.storyboard */; };
 		330F7B8D1C91D3EB00A77127 /* UIDynamicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 330F7B8C1C91D3EB00A77127 /* UIDynamicTests.m */; };
 		330F7B981C91D3EB00A77127 /* UIDynamicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 330F7B971C91D3EB00A77127 /* UIDynamicUITests.m */; };
+		33E505D01C9281C600D2F8EF /* XCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E505CF1C9281C600D2F8EF /* XCTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 		330F7B731C91D3EB00A77127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		330F7B751C91D3EB00A77127 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		330F7B761C91D3EB00A77127 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		330F7B781C91D3EB00A77127 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		330F7B791C91D3EB00A77127 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		330F7B7C1C91D3EB00A77127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		330F7B7E1C91D3EB00A77127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		330F7B811C91D3EB00A77127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330F7B831C91D3EB00A77127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		330F7B931C91D3EB00A77127 /* UIDynamicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIDynamicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		330F7B971C91D3EB00A77127 /* UIDynamicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDynamicUITests.m; sourceTree = "<group>"; };
 		330F7B991C91D3EB00A77127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E505CE1C9281C600D2F8EF /* XCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTableViewController.h; sourceTree = "<group>"; };
+		33E505CF1C9281C600D2F8EF /* XCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +101,8 @@
 			children = (
 				330F7B751C91D3EB00A77127 /* AppDelegate.h */,
 				330F7B761C91D3EB00A77127 /* AppDelegate.m */,
-				330F7B781C91D3EB00A77127 /* ViewController.h */,
-				330F7B791C91D3EB00A77127 /* ViewController.m */,
-				330F7B7B1C91D3EB00A77127 /* Main.storyboard */,
+				33E505CE1C9281C600D2F8EF /* XCTableViewController.h */,
+				33E505CF1C9281C600D2F8EF /* XCTableViewController.m */,
 				330F7B7E1C91D3EB00A77127 /* Assets.xcassets */,
 				330F7B801C91D3EB00A77127 /* LaunchScreen.storyboard */,
 				330F7B831C91D3EB00A77127 /* Info.plist */,
@@ -245,7 +242,6 @@
 			files = (
 				330F7B821C91D3EB00A77127 /* LaunchScreen.storyboard in Resources */,
 				330F7B7F1C91D3EB00A77127 /* Assets.xcassets in Resources */,
-				330F7B7D1C91D3EB00A77127 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				330F7B7A1C91D3EB00A77127 /* ViewController.m in Sources */,
 				330F7B771C91D3EB00A77127 /* AppDelegate.m in Sources */,
 				330F7B741C91D3EB00A77127 /* main.m in Sources */,
+				33E505D01C9281C600D2F8EF /* XCTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		330F7B7B1C91D3EB00A77127 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				330F7B7C1C91D3EB00A77127 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		330F7B801C91D3EB00A77127 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -496,6 +484,7 @@
 				330F7B9E1C91D3EB00A77127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		330F7B9F1C91D3EB00A77127 /* Build configuration list for PBXNativeTarget "UIDynamicTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +493,7 @@
 				330F7BA11C91D3EB00A77127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		330F7BA21C91D3EB00A77127 /* Build configuration list for PBXNativeTarget "UIDynamicUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +502,7 @@
 				330F7BA41C91D3EB00A77127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
