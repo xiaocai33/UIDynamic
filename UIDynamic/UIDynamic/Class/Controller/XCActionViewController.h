@@ -11,18 +11,18 @@ typedef enum
 {
     /** 重力行为 */
     kViewActionGravity = 0,
-    /** 吸附行为 */
-    kViewActionSnap,
     /** 碰撞行为 */
     kViewActionCollisionGravity,
-    /** 推动行为 */
-    kViewActionPush,
-    /** 刚性附加行为 */
-    kViewActionAttachment,
-    /** 弹性附加行为 */
-    kViewActionSpring,
-    /** 碰撞检测 */
-    kViewActionCollision
+    /** 吸附行为 */
+    kViewActionSnap
+//    /** 推动行为 */
+//    kViewActionPush,
+//    /** 刚性附加行为 */
+//    kViewActionAttachment,
+//    /** 弹性附加行为 */
+//    kViewActionSpring,
+//    /** 碰撞检测 */
+//    kViewActionCollision
     
     
 } kViewAction;
