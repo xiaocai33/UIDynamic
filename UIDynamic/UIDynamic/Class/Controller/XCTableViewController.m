@@ -13,6 +13,7 @@
 
 
 #import "XCTableViewController.h"
+#import "XCActionViewController.h"
 @interface XCTableViewController()
 
 @property (nonatomic, strong) NSArray *names;
@@ -22,7 +23,7 @@
 @implementation XCTableViewController
 - (NSArray *)names{
     if (_names == nil) {
-        _names = @[@"重力演示", @"碰撞演示", @"吸附演示"];
+        _names = @[@"重力行为", @"碰撞行为", @"吸附行为"];//, @"推动行为", @"刚性附加行为", @"弹性附加行为", @"碰撞检测"];
     }
     return _names;
 }
@@ -30,7 +31,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     //设置窗口颜色
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     //设置标题
     self.navigationItem.title = @"物理仿真演示";
     
@@ -55,7 +56,13 @@
 
 #pragma mark -- UITableViewController代理方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%zi", indexPath.row);
+    //NSLog(@"%zi", indexPath.row);
+    XCActionViewController *actionVc = [[XCActionViewController alloc] init];
+    //设置title
+    actionVc.navigationItem.title = self.names[indexPath.row];
+    actionVc.viewAction = indexPath.row;
+    
+    [self.navigationController pushViewController:actionVc animated:YES];
 }
 
 @end
